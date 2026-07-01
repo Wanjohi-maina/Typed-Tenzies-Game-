@@ -1,6 +1,6 @@
 # Tenzies React Game
 
-Tenzies is a small dice game built with React. The goal is to roll until all ten dice show the same value. Players can click individual dice to hold their current value, then keep rolling the remaining dice until every die matches.
+Tenzies is a small dice game built with React and TypeScript. The goal is to roll until all ten dice show the same value. Players can click individual dice to hold their current value, then keep rolling the remaining dice until every die matches.
 
 This version includes a polished game interface with dotted dice faces, a live timer, roll tracking, best-score tracking, responsive mobile styling, and a confetti celebration when the game is won.
 
@@ -14,6 +14,7 @@ This version includes a polished game interface with dotted dice faces, a live t
 - Full-screen confetti celebration on win
 - Accessible die buttons with `aria-pressed` and screen-reader win announcement
 - Responsive layout for mobile and desktop screens
+- Typed dice values, game state, component props, and DOM refs
 
 ## How To Play
 
@@ -39,7 +40,7 @@ npm install
 Start the development server:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Build for production:
