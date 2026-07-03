@@ -38,7 +38,7 @@ export default function App():JSX.Element {
         width: window.innerWidth,
         height: window.innerHeight
     }))
-    const buttonRef = useRef<HTMLButtonElement | null>(null)
+    const buttonRef = useRef<HTMLButtonElement>(null)
 
     const gameWon: boolean = dice.every(die => die.isHeld) &&
         dice.every(die => die.value === dice[0].value)
